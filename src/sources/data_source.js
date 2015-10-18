@@ -8,7 +8,7 @@ export default class DataSource {
     constructor (source) {
         this.id = source.id;
         this.name = source.name;
-        this.url = source.url;
+        this.url = Utils.addParamsToURL(source.url, source.params);
         this.pad_scale = source.pad_scale || 0.0005; // scale tile up by small factor to cover seams
         this.enforce_winding = source.enforce_winding || false; // whether to enforce winding order
 
