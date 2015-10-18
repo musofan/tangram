@@ -159,7 +159,9 @@ sources:
     # When commented, demo main.js will set source based on URL - uncomment for testing
     # osm:
     #     type: TopoJSON
-    #     url:  http://vector.mapzen.com/osm/all/{z}/{x}/{y}.topojson?api_key=vector-tiles-HqUVidw
+    #     url: http://vector.mapzen.com/osm/all/{z}/{x}/{y}.topojson
+    #     params:
+    #         api_key: vector-tiles-HqUVidw
     #     # Data filtering demo with 'scripts' and 'transform' properties:
     #     # Tile data is passed through a 'transform' pre-processing function before Tangram geometry is built.
     #     # 'transform' adds an 'intersects_park' property to each road that intersects a park feature.
